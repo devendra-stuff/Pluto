@@ -1,0 +1,24 @@
+.custom-home {
+    background-color: black;
+}
+
+.custom-button {
+    color: black !important;
+    filter: blur(0px) drop-shadow(0 0 10px rgba(0, 128, 100, 0.8)) drop-shadow(0 0 20px rgba(0, 128, 128, 0.66));
+
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-logo {
+    width: 30vw;
+    margin-bottom: 30px;
+}
+
+.planet {
+    filter: blur(0px) drop-shadow(0 0 20px rgba(255, 0, 204, 0.7)) drop-shadow(0 0 40px rgba(243, 117, 226, 0.5));
+}

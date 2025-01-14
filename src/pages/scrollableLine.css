@@ -1,0 +1,18 @@
+.scroll-line {
+    margin-left: 10px;
+    align-items: center; /* Vertically center */
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    filter: blur(0px) drop-shadow(0 0 5px rgb(255, 255, 255)) drop-shadow(0 0 10px rgb(225, 231, 231));
+
+}
+
+.scroll-line2 {
+    margin-left: 10px;
+    position: absolute;
+}
+
+.timeline {
+    position: relative;
+}
