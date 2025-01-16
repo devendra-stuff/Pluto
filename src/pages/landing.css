@@ -21,16 +21,6 @@
   margin-top: 100px;
 }
 
-.test {
-  font-family: "poppins";
-  font-weight: 700;
-  z-index: 100;
-  color: #fff;
-  width: 50vw;
-  margin: 20px;
-  font-size: 4vw;
-}
-
 .custom {
   margin: 60px;
   width: 60vw;
@@ -38,31 +28,30 @@
   background-color: transparent !important;
 }
 
-.grand-parent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.custom-card-neon {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .parent {
   display: grid;
   grid-template-columns: 1fr 40px 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 50px;
   grid-row-gap: 5rem;
 }
 
-.scroll-grand-parent{
-  height: 90vh;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
+.grand-parent {
   height: 80vh;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.scroll-grand-parent {
+  margin: 80px;
+  height: 90vh;
 }
 
 .div1 {
@@ -115,43 +104,32 @@
 }
 
 .data-card-parent {
-  display: grid;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: repeat(2, 300px);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800; /* Thin */
   align-items: center;
+  justify-content: left;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 510px);
+  grid-template-rows: repeat(2, 160px);
+  gap: 20px;
 }
 
-.custom-data-card-1 {
-  grid-area: 1 / 1 / 2 / 2;
-  margin: 20px;
-  width: 350px;
-  height: 250px;
-}
-.custom-data-card-2 {
-  grid-area: 1 / 2 / 2 / 3;
-  margin: 20px;
-  width: 350px;
-  height: 250px;
-}
-.custom-data-card-3 {
-  grid-area: 2 / 1 / 3 / 2;
-  margin: 20px;
-  width: 350px;
-  height: 250px;
-}
-.custom-data-card-4 {
-  grid-area: 2 / 2 / 3 / 3;
-  margin: 20px;
-  width: 350px;
-  height: 250px;
+.div-neon {
+  text-align: center;
 }
 
-.card-grandparent {
-  display: flex;
-  flex-direction: column;
+.custom-card-neon {
+  width: 500px;
+  height: 150px;
+  padding: 0px;
+}
+
+.intro {
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0px;
 }
 
 .musical-note {
@@ -185,10 +163,27 @@
 
 .text {
   font-family: "Big Shoulders Inline", sans-serif;
-  font-size: 10vw;
+  font-size: 14vw;
   color: teal;
   filter: blur(0px) drop-shadow(0 0 30px rgba(0, 128, 100, 0.8))
     drop-shadow(0 0 50px rgba(0, 128, 128, 0.66));
+}
+
+.neon-container-side {
+  display: flex;
+  flex-direction: row;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-main {
+  display: flex;
+  color: white;
+  font-size: 2vw;
+  margin: 0px;
 }
 
 .custom-intro {
@@ -197,7 +192,7 @@
 
 .text2 {
   font-family: "Big Shoulders Inline", sans-serif;
-  font-size: 7vw;
+  font-size: 14vw;
   color: purple;
   filter: blur(0px) drop-shadow(0 0 30px rgba(128, 0, 0, 0.8))
     drop-shadow(0 0 50px rgba(128, 0, 0, 0.66));
@@ -205,14 +200,6 @@
 
 .custom-shining-card-text {
   font-size: 3.5vw;
-}
-
-.text3 {
-  font-family: "Big Shoulders Inline", sans-serif;
-  font-size: 10vw;
-  color: rgb(26, 0, 128);
-  filter: blur(0px) drop-shadow(0 0 30px rgba(15, 0, 128, 0.8))
-    drop-shadow(0 0 50px rgba(11, 0, 128, 0.66));
 }
 
 .icons {

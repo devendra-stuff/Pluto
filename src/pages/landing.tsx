@@ -5,7 +5,6 @@ import { NeonGradientCard } from "@/components/ui/neon-gradient-card";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import ScrollableLine from "./scrollableLine";
-import ShineBorder from "@/components/ui/shine-border";
 import { MarqueeDemo } from "./marquee";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -35,60 +34,55 @@ export default function landing() {
           />
 
           <div className="grand-parent">
-            <div className="box">
-              <NeonGradientCard className="custom items-center  text-center card-neon ">
-                <span className="custom-intro pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text text-center text-6xl font-bold leading-none tracking-tighter text-white dark:drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
-                  GET UPTO 90% OFF <br></br>
-                  ON SHOPPING ONLINE AND DINING OUT.
-                </span>
-              </NeonGradientCard>
-            </div>
+            <div className="data-card-parent">
+              <div className="div-neon">
+                <NeonGradientCard className="custom items-center text-center card-neon custom-card-neon">
+                  <div className="total-container">
+                    <p className="intro-main">Shop from your favorite brands.</p>
+                    <div className="neon-container-side">
+                      <p className="intro">Get that product you always wanted.</p>
+                      <img src="src/assets/price.png" alt="" />
+                    </div>
+                  </div>
+                </NeonGradientCard>
+              </div>
 
-            <div className="text3">WHAT PLUTO IS</div>
+              <div className="div-neon">
+                <NeonGradientCard className="custom items-center text-center card-neon custom-card-neon">
+                  <div className="total-container">
+                    <p className="intro-main">Dine at your favorite places.</p>
+                    <div className="neon-container-side">
+                      <p className="intro">Get reservations at places you never get easily.</p>
+                      <img src="src/assets/wine.png" alt="" />
+                    </div>
+                  </div>
+                </NeonGradientCard>
+              </div>
 
-            <div className="card-grandparent">
-              <div className="data-card-parent">
-                <ShineBorder
-                  className="relative flex flex-col items-center justify-center overflow-hidden rounded-lg border-3px bg-background md:shadow-xl custom-data-card-1"
-                  color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                >
-                  <span className="pointer-events-none whitespace-pre-wrap text-center text-5xl font-semibold leading-none text-white">
-                    Shop for your favorite products
-                  </span>
-                </ShineBorder>
+              <div className="div-neon">
+                <NeonGradientCard className="custom items-center text-center card-neon custom-card-neon">
+                  <div className="total-container">
+                    <p className="intro-main">This is your 0-1 launchpad</p>
+                    <div className="neon-container-side">
+                      <p className="intro">
+                        Start your influencer journey today!
+                      </p>
+                      <img src="src/assets/cam.png" alt="" />
+                    </div>
+                  </div>
+                </NeonGradientCard>
+              </div>
 
-                <ShineBorder
-                  className="relative flex flex-col items-center justify-center overflow-hidden rounded-lg border-3px bg-background md:shadow-xl custom-data-card-2"
-                  color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                >
-                  <span
-                    className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10 custom-shining-card-text
-                "
-                  >
-                    Dine at your favorite places
-                  </span>
-                </ShineBorder>
-
-                <ShineBorder
-                  className="relative flex flex-col items-center justify-center overflow-hidden rounded-lg border-3px bg-background md:shadow-xl custom-data-card-3"
-                  color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                >
-                  <span
-                    className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10 custom-shining-card-text
-                "
-                  >
-                    Start your influencer journey today
-                  </span>
-                </ShineBorder>
-
-                <ShineBorder
-                  className="relative flex flex-col items-center justify-center overflow-hidden rounded-lg border-3px bg-background md:shadow-xl custom-data-card-4"
-                  color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
-                >
-                  <span className="pointer-events-none whitespace-pre-wrap text-center text-5xl font-semibold leading-none text-white">
-                    All you need is 1000+ followers
-                  </span>
-                </ShineBorder>
+              <div className="div-neon">
+                <NeonGradientCard className="custom items-center text-center card-neon custom-card-neon">
+                  <div className="total-container">
+                    <p className="intro-main">All you is 1000+ followers</p>
+                    <div className="neon-container-side">
+                      <p className="intro">Get started right out after you get approved.</p>
+                      <img src="src/assets/instagram.png" alt="" />
+                    </div>
+                  </div>
+                </NeonGradientCard>
               </div>
             </div>
             <img className="musical-note" src="src/assets/note.png" alt="" />

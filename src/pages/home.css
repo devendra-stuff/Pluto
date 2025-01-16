@@ -4,8 +4,8 @@
 
 .custom-button {
     color: black !important;
-    filter: blur(0px) drop-shadow(0 0 10px rgba(0, 128, 100, 0.8)) drop-shadow(0 0 20px rgba(0, 128, 128, 0.66));
-
+    filter: blur(0px) drop-shadow(0 0 30px rgb(255, 255, 255)) drop-shadow(0 0 40px rgb(187, 187, 187));
+    margin: 30px;
 }
 
 .main-container {
@@ -20,5 +20,26 @@
 }
 
 .planet {
-    filter: blur(0px) drop-shadow(0 0 20px rgba(255, 0, 204, 0.7)) drop-shadow(0 0 40px rgba(243, 117, 226, 0.5));
+    filter: blur(0px) drop-shadow(0 0 30px rgba(255, 0, 204, 0.7)) drop-shadow(0 0 50px rgba(243, 117, 226, 0.5));
+}
+
+.moon {
+    filter: blur(0px) drop-shadow(0 0 50px rgba(0, 106, 255, 0.7)) drop-shadow(0 0 70px rgba(117, 161, 243, 0.5));
+}
+
+.ufo {
+    filter: blur(0px) drop-shadow(0 0 30px rgba(0, 98, 255, 0.7)) drop-shadow(0 0 50px rgba(117, 169, 243, 0.5));
+}
+
+.lamp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lamp-grandparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
